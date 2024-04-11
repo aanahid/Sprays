@@ -1,0 +1,32 @@
+body {
+    background-image: url(assets/wall.jpg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+   }
+
+h1 {
+    color: azure;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+#spray-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    grid-template-rows: repeat(3, 205px);
+    gap: 10px;
+}
+
+#spray-container img {
+    max-width: 100%;
+    max-height: 100%; 
+    display: block; 
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
