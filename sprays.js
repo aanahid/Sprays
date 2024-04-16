@@ -34,6 +34,7 @@ async function getCosmetic(cosmetics) {
 
 let allSprays = await fetchSprays(); 
 let someCosmetics = await fetchCosmetics();
+
 let sprayDivs = document.querySelectorAll('.spray');
 
 // Loop through each div and add a click event listener
@@ -48,6 +49,7 @@ sprayDivs.forEach(function(div) {
         else {
             sprayUrl = await getCosmetic(someCosmetics);
         }
+
         div.querySelector("img").src = sprayUrl;
         div.querySelector("img").alt = "spray";
         console.log('Div clicked:', div.querySelector("img").id);
